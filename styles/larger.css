@@ -1,0 +1,35 @@
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 100%;
+    }
+
+    header {
+        display: flex;
+    }
+
+    nav ul {
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-evenly;
+        max-width: 900px;
+    }
+
+    nav a {
+        border: 1px solid transparent;
+        padding: 1rem 2rem;
+    }
+
+    nav a:hover {
+        border: 1px solid var(--red);
+        background-color: var(--red);
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+    .title-container {
+        grid-column: 1/3;
+    }
+}
