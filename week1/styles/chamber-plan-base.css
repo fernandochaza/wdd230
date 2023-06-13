@@ -64,19 +64,17 @@ h4 {
   font-weight: 400;
 }
 
-th {
-  font-weight: 400;
+p {
+    line-height: 1.2rem;
 }
 
 hr {
-  margin: 2rem 1rem;
+  margin: 2rem 1rem ;
   border: 2px solid var(--accent3-color);
 }
 
 .header-title {
-  width: 90%;
   margin: 0 auto;
-  padding: 0 1rem;
   border: 1px solid black;
   border-radius: 8px;
   text-align: center;
@@ -85,6 +83,23 @@ hr {
 }
 
 .section {
+    display: flex;
+    flex-direction: column;
+}
+
+.section h2 {
+    align-self: center;
+}
+
+.overview-card {
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: .5rem 0 1rem 0;
+    padding: .5rem 1rem;
+}
+
+.overview-card ul li {
+    padding-bottom: 1rem;
 }
 
 .colors-table {
@@ -104,4 +119,3 @@ hr {
   padding: 1rem;
   text-align: center;
 }
-
