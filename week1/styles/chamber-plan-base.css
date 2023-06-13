@@ -21,7 +21,7 @@
   --heading-color-on-white: black;
   --heading-color-on-color: #d8b9a3;
   --paragraph-color-on-white: black;
-  --paragraph-color-on-color: #d8b9a3;
+  --paragraph-color-on-color: #black;
   --nav-link-color: #d8b9a3;
   --nav-background-color: #283659;
   --nav-hover-color: #d8b9a3;
@@ -148,4 +148,52 @@ hr {
 
 .table-cell.accent-3 {
     background-color: var(--accent3-color);
+}
+
+.typography-section {
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.typography-section hr {
+    margin: 0;
+    border: 1px solid var(--accent1-color);
+}
+
+.main-heading {
+    margin-bottom: 2rem;
+}
+
+.heading-on-light {
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid black;
+    color: var(--heading-color-on-white);
+    margin-bottom: 1rem;
+}
+
+.heading-on-dark {
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: var(--heading-color-on-color);
+}
+
+.paragraph-on-light {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.paragraph-on-dark {
+    border: 1px solid transparent;
+
+    border-radius: 8px;
+    padding: 0 1rem;
+    background-color: var(--secondary-color);
+    color: var(--paragraph-color-on-color);
 }
