@@ -102,14 +102,19 @@ hr {
     padding-bottom: 1rem;
 }
 
+.color-schema {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
 .colors-table {
-  margin: 1rem 0;
+  margin: 1rem 0 3rem 0;
   border-radius: 8px;
 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: 8px;
-  place-items: center;
 }
 
 .table-cell {
@@ -118,4 +123,29 @@ hr {
   border-radius: 8px;
   padding: 1rem;
   text-align: center;
+
+  font-weight: 600;
+  font-size: .9rem;
+}
+
+.table-cell.primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.table-cell.secondary {
+    background-color: var(--secondary-color);
+}
+
+.table-cell.accent-1 {
+    background-color: var(--accent1-color);
+}
+
+.table-cell.accent-2 {
+    background-color: var(--accent2-color);
+    color: white;
+}
+
+.table-cell.accent-3 {
+    background-color: var(--accent3-color);
 }
