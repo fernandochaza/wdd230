@@ -1,85 +1,107 @@
 /* Global CSS variables */
 :root {
-    /* Color palette */
-    --primary-color: #283659;
-    --secondary-color: #D8B9A3;
-    --accent1-color: #00BAD9;
-    --accent2-color: #724437;
-    --accent3-color: #A66E55;
+  /* Color palette */
+  --primary-color: #283659;
+  --secondary-color: #d8b9a3;
+  --accent1-color: #00bad9;
+  --accent2-color: #724437;
+  --accent3-color: #a66e55;
 
-    /* Fonts */
-    --font-family: 'Raleway', sans-serif;
-    --primary-heading-size: 2.5rem;
-    --primary-heading-weight: 800;
-    --secondary-headings-size: 1.5rem;
-    --secondary-heading-weight: 600;
-    --paragraph-size: 1rem;
-    --paragraph-weight: 100;
+  /* Fonts */
+  --font-family: "Raleway", sans-serif;
+  --primary-heading-size: 2.5rem;
+  --primary-heading-weight: 800;
+  --secondary-headings-size: 1.5rem;
+  --secondary-heading-weight: 600;
+  --paragraph-size: 1rem;
+  --paragraph-weight: 100;
 
-    /* Elements colors */
-    --background-color: white;
-    --heading-color-on-white: black;
-    --heading-color-on-color: #D8B9A3;
-    --paragraph-color-on-white: black;
-    --paragraph-color-on-color: #D8B9A3;
-    --nav-link-color: #D8B9A3;
-    --nav-background-color: #283659;
-    --nav-hover-color: #D8B9A3;
-    --nav-hover-background-color: #00BAD9;
+  /* Elements colors */
+  --background-color: white;
+  --heading-color-on-white: black;
+  --heading-color-on-color: #d8b9a3;
+  --paragraph-color-on-white: black;
+  --paragraph-color-on-color: #d8b9a3;
+  --nav-link-color: #d8b9a3;
+  --nav-background-color: #283659;
+  --nav-hover-color: #d8b9a3;
+  --nav-hover-background-color: #00bad9;
 
-    /* Breakpoints */
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 1024px;
-    --breakpoint-xl: 1200px;
+  /* Breakpoints */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1200px;
 }
 
 /* set default font and spacing */
 html {
-    font-family: var(--font-family);
-    font-size: 120%;
-    margin: 0;
-    padding: 0;
+  font-family: var(--font-family);
+  font-size: 120%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    margin: 1rem;
+  padding: 1rem;
 }
 
 h1 {
-    font-weight: var(--primary-heading-weight);
-    font-size: var(--primary-heading-size);
+  font-weight: var(--primary-heading-weight);
+  font-size: var(--primary-heading-size);
 }
 
 h2 {
-    font-weight: var(--secondary-heading-weight);
-    font-size: var(--secondary-headings-size);
+  font-weight: var(--secondary-heading-weight);
+  font-size: var(--secondary-headings-size);
 }
 
 h3 {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 h4 {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 th {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 hr {
-    margin: 2rem 1rem;
-    border: 2px solid var(--accent3-color);
+  margin: 2rem 1rem;
+  border: 2px solid var(--accent3-color);
 }
 
 .header-title {
-    width: 90%;
-    margin: 0 auto;
-    border: 1px solid black;
-    border-radius: 8px;
-    text-align: center;
-    background-color: var(--primary-color);
-    color: var(--heading-color-on-color);
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  border: 1px solid black;
+  border-radius: 8px;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--heading-color-on-color);
+}
+
+.section {
+}
+
+.colors-table {
+  margin: 1rem 0;
+  border-radius: 8px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 8px;
+  place-items: center;
+}
+
+.table-cell {
+  width: 60%;
+  outline: 1px solid black;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
 }
 
