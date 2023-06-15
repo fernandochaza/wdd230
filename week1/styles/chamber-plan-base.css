@@ -1,11 +1,15 @@
+/* WIREFRAME:
+
+https://www.figma.com/file/rWtfZZPDaXrGdbw7O780Yb/Chamber---Mobile?type=design&node-id=0%3A1&t=VqZpv6Fjkc6SmRpN-1*/
+
 /* Global CSS variables */
 :root {
   /* Color palette */
-  --primary-color: #283659;
-  --secondary-color: #d8b9a3;
-  --accent1-color: #00bad9;
-  --accent2-color: #724437;
-  --accent3-color: #a66e55;
+  --primary-color: #049DBF;
+  --secondary-color: #C1D96C;
+  --accent1-color: #F2C36B;
+  --accent2-color: #733439;
+  --accent3-color: #A9D4D9;
 
   /* Fonts */
   --font-family: "Raleway", sans-serif;
@@ -19,12 +23,12 @@
   /* Elements colors */
   --background-color: white;
   --heading-color-on-white: black;
-  --heading-color-on-color: #d8b9a3;
+  --heading-color-on-color: black;
   --paragraph-color-on-white: black;
-  --paragraph-color-on-color: #black;
-  --nav-link-color: #d8b9a3;
-  --nav-background-color: #283659;
-  --nav-hover-color: #d8b9a3;
+  --paragraph-color-on-color: black;
+  --nav-link-color: #048ABF;
+  --nav-background-color: white;
+  --nav-hover-color: #F29F05;
   --nav-hover-background-color: #00bad9;
 
   /* Breakpoints */
@@ -36,6 +40,7 @@
 
 /* set default font and spacing */
 html {
+  background-color: var(--background-color);
   font-family: var(--font-family);
   font-size: 120%;
   margin: 0;
@@ -130,15 +135,17 @@ hr {
 
 .table-cell.primary {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--paragraph-color-on-white);
 }
 
 .table-cell.secondary {
     background-color: var(--secondary-color);
+    color: var(--paragraph-color-on-color);
 }
 
 .table-cell.accent-1 {
     background-color: var(--accent1-color);
+    color: var(--paragraph-color-on-white);
 }
 
 .table-cell.accent-2 {
@@ -148,6 +155,7 @@ hr {
 
 .table-cell.accent-3 {
     background-color: var(--accent3-color);
+    color: black;
 }
 
 .typography-section {
@@ -155,11 +163,6 @@ hr {
     border-radius: 8px;
     margin-top: 2rem;
     padding: 1rem;
-}
-
-.typography-section hr {
-    margin: 0;
-    border: 1px solid var(--accent1-color);
 }
 
 .main-heading {
@@ -194,6 +197,21 @@ hr {
 
     border-radius: 8px;
     padding: 0 1rem;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: var(--paragraph-color-on-color);
+}
+
+.wireframes-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wireframes-section img{
+  width: fit-content;
+  max-width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 4px;
 }
