@@ -56,6 +56,11 @@ h1 {
   font-size: var(--primary-heading-size);
 }
 
+.top-heading {
+  font-weight: var(--primary-heading-weight);
+  font-size: var(--primary-heading-size);
+}
+
 h2 {
   font-weight: var(--secondary-heading-weight);
   font-size: var(--secondary-headings-size);
