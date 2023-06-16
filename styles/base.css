@@ -110,6 +110,8 @@ main, header, nav a{
 
 .card ul {
 	list-style-type: none;
+    text-align: center;
+    padding-left: 0;
 }
 
 .card div {
