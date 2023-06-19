@@ -1,0 +1,67 @@
+/* Global CSS variables */
+:root {
+  /* Color palette */
+  --primary-color: ;
+  --secondary-color: ;
+  --accent1-color: ;
+  --accent2-color: ;
+
+  /* Fonts */
+  --font-family: ;
+  --header-font-family: ;
+  --main-font-family: ;
+  --nav-font-family: ;
+  --h1-size: 2.5rem;
+  --h1-weight: 800;
+  --h2-size: 1.5rem;
+  --h2-weight: 600;
+  --h3-size: 1.2rem;
+  --h3-weight: 500;
+  --paragraph-size: 1rem;
+  --paragraph-weight: 100;
+
+  /* Elements colors */
+  --background-color: ;
+  --heading-color-on-white: ;
+  --heading-color-on-color: ;
+  --paragraph-color-on-white: ;
+  --paragraph-color-on-color: ;
+  --nav-link-color: ;
+  --nav-background-color: ;
+  --nav-hover-color: ;
+  --nav-hover-background-color: ;
+
+  /* Breakpoints */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1200px;
+}
+
+/* set default font style and spacing */
+html {
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+  font-size: 120%;
+}
+
+h1 {
+  font-family: var(--header-font-family);
+  font-size: var(--h1-size);
+  font-weight: var(--h1-weight);
+}
+
+h2 {
+  font-family: var(--header-font-family);
+  font-size: var(--h2-size);
+  font-weight: var(--h2-weight);
+}
+
+h3 {
+  font-size: var(--h3-size);
+  font-weight: var(--h3-weight);
+}
+
+p {
+  line-height: 1.2rem;
+}
