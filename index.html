@@ -23,13 +23,10 @@
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&family=Inter&family=Noto+Sans:wght@900&display=swap"
-      rel="stylesheet"
-    >
-
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&family=Inter:wght@100;300;400;700;800;900&display=swap" rel="stylesheet">
     <!-- External CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
 
     <!-- Favicon -->
@@ -43,6 +40,10 @@
         alt="Fernando Chazarreta's profile picture"
       >
       <h1>Fernando Chazarreta</h1>
+      <div class="dark-mode-container">
+        <img class="dark-light-button" src="images/dark-mode.svg" alt="Menu Button">
+      </div>
+  
     </header>
     <div class="menu-button-container">
       <img class="menu-button" src="images/hamburger-menu.svg" alt="Menu Button">
@@ -60,7 +61,7 @@
         <h2 class="title">WDD 230: Web Frontend Development</h2>
       </div>
       <section class="card">
-        <h3>Learning Activities</h3>
+        <h3 class="card-header">Learning Activities</h3>
         <ul>
           <li>Week 02 - <a href="week02/design.html" target="_blank">Web Design Principles</a></li>
           <li>Week 02 - <a href="https://codepen.io/fernandochaza/pen/abQNpMY" target="_blank">Responsive Navigation</a></li>
@@ -68,7 +69,7 @@
         </ul>
       </section>
       <section class="card">
-        <h3>Information</h3>
+        <h3 class="card-header">Information</h3>
         <div class="location">[Location Placeholder]</div>
         <div class="weather">[Weather Placeholder]</div>
         <div class="visits">[Visits Placeholder]</div>
@@ -81,7 +82,8 @@
       </p>
       <p id="lastModified"></p>
     </footer>
-    <script src="scripts/toggleMenu.js"></script>
     <script src="scripts/getDate.js"></script>
+    <script src="scripts/toggleMenu.js"></script>
+    <script src="scripts/toggleDarkMode.js"></script>
   </body>
 </html>
