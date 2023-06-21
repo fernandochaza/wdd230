@@ -8,16 +8,16 @@
   --accent3-color: #DAFDBA;
 
   /* Fonts */
-  --font-family: "Raleway", sans-serif;
-  --header-font-family: "Raleway", sans-serif;
+  --font-family: "Poppins", sans-serif;
+  --header-font-family: "Poppins", sans-serif;
   --main-font-family: "Raleway", sans-serif;
   --nav-font-family: "Raleway", sans-serif;
   --h1-size: 2rem;
   --h1-weight: 800;
   --h2-size: 1.5rem;
-  --h2-weight: 600;
+  --h2-weight: 700;
   --h3-size: 1.2rem;
-  --h3-weight: 500;
+  --h3-weight: 600;
   --paragraph-size: 1rem;
   --paragraph-weight: 200;
   --nav-font-size: 1.3rem;
@@ -25,7 +25,7 @@
   /* Elements colors */
   --background-color: white;
   --heading-color-on-white: #012030;
-  --heading-color-on-color: #45C4B0;
+  --heading-color-on-color: white;
   --paragraph-color-on-white: #012030;
   --paragraph-color-on-color: #45C4B0;
   --nav-font-color: white;
@@ -63,7 +63,12 @@ h1 {
 h2 {
   font-family: var(--header-font-family);
   font-size: var(--h2-size);
-  font-weight: var(--h2-weight);
+  font-weight: var(--h2-weight);  
+  background-color: #13678A;
+  padding: 1rem 1rem;
+  border-bottom-left-radius: 64px;
+  border-top-left-radius: 64px;
+  color: var(--heading-color-on-color);
 }
 
 h3 {
@@ -74,6 +79,7 @@ h3 {
 
 p {
   line-height: 1.2rem;
+  margin: 0;
 }
 
 ul {
@@ -95,7 +101,7 @@ img {
   padding: .3rem;
   color: white;
   font-weight: 200;
-  text-shadow: 2px 2px 2px #012030;
+  text-shadow: 1px 1px 2px #012030;
 }
 /* End of default font and styles */
 
@@ -132,11 +138,12 @@ nav {
 }
 
 nav ul {
-  width: 50%;
+  width: 100%;
   margin: .2rem 0;
   background-color: var(--nav-background-color);
   border-radius: 4px;
   border-bottom-left-radius: 64px;
+  border-top-left-radius: 64px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -183,7 +190,7 @@ nav ul {
 /* END of Mobile HERO Section */
 
 
-/* Weather widget */
+/* Mobile. Weather widget */
 .weather-widget {
   margin: 1rem 0;
   /* display: flex;
@@ -201,4 +208,30 @@ nav ul {
 @keyframes marquee {
   0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
+}
+/* END of Mobile Weather Widget*/
+
+
+/* Directory widget section */
+.directory-button-container {
+  display: none;
+}
+/* END of Directory widget section */
+
+
+/* Mobile Upcoming Events Section*/
+
+.event-card {
+  margin: 0 .2rem 2rem .2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-card p {
+  margin: .3rem auto;
+}
+
+.event-card-image {
+  width: 32px;
+  align-self: flex-end;
 }
