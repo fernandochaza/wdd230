@@ -19,7 +19,8 @@
   --h3-size: 1.2rem;
   --h3-weight: 500;
   --paragraph-size: 1rem;
-  --paragraph-weight: 100;
+  --paragraph-weight: 200;
+  --nav-font-size: 1.3rem;
 
   /* Elements colors */
   --background-color: white;
@@ -27,8 +28,8 @@
   --heading-color-on-color: #45C4B0;
   --paragraph-color-on-white: #012030;
   --paragraph-color-on-color: #45C4B0;
-  --nav-font-color: #45C4B0;
-  --nav-background-color: #012030;
+  --nav-font-color: white;
+  --nav-background-color: #13678A;
   --nav-hover-font-color: #45C4B0;
   --nav-hover-background-color: #13678A;
 
@@ -40,7 +41,7 @@
 }
 
 
-/* set default font style and spacing */
+/* Set default font style and spacing */
 html {
   background-color: var(--background-color);
   font-family: var(--font-family);
@@ -64,7 +65,6 @@ h3 {
   font-size: var(--h3-size);
   font-weight: var(--h3-weight);
   margin: 0;
-  min-width: 380px;
 }
 
 p {
@@ -73,6 +73,8 @@ p {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -81,7 +83,7 @@ img {
 /* End of default font and styles */
 
 
-/* Header section */
+/* Mobile. Header section */
 header {
   display: flex;
 }
@@ -97,11 +99,37 @@ header {
 }
 
 .menu-button-container {
-  margin: auto .2rem auto auto;
+  margin: auto .2rem 0 auto;
 }
 
 .menu-button {
   width: 40px;
 }
-/* End of header Section */
+/* End of mobile header Section */
 
+
+/* Mobile navigation section */
+nav {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+nav ul {
+  width: 50%;
+  margin: .2rem 0;
+  background-color: var(--nav-background-color);
+  border-radius: 4px;
+  border-bottom-left-radius: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--nav-font-color);
+  font-weight: var(--paragraph-weight);
+  font-size: var(--nav-font-size);
+  line-height: 3rem;
+  padding-right: 50px;
+}
