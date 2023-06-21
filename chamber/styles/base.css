@@ -1,16 +1,17 @@
 /* Global CSS variables */
 :root {
   /* Color palette */
-  --primary-color: ;
-  --secondary-color: ;
-  --accent1-color: ;
-  --accent2-color: ;
+  --primary-color: #13678A;
+  --secondary-color: #45C4B0;
+  --accent1-color: #012030;
+  --accent2-color: #9AEBA3;
+  --accent3-color: #DAFDBA;
 
   /* Fonts */
-  --font-family: ;
-  --header-font-family: ;
-  --main-font-family: ;
-  --nav-font-family: ;
+  --font-family: "Raleway", sans-serif;
+  --header-font-family: "Raleway", sans-serif;
+  --main-font-family: "Raleway", sans-serif;
+  --nav-font-family: "Raleway", sans-serif;
   --h1-size: 2.5rem;
   --h1-weight: 800;
   --h2-size: 1.5rem;
@@ -21,15 +22,15 @@
   --paragraph-weight: 100;
 
   /* Elements colors */
-  --background-color: ;
-  --heading-color-on-white: ;
-  --heading-color-on-color: ;
-  --paragraph-color-on-white: ;
-  --paragraph-color-on-color: ;
-  --nav-link-color: ;
-  --nav-background-color: ;
-  --nav-hover-color: ;
-  --nav-hover-background-color: ;
+  --background-color: white;
+  --heading-color-on-white: #012030;
+  --heading-color-on-color: #45C4B0;
+  --paragraph-color-on-white: #012030;
+  --paragraph-color-on-color: #45C4B0;
+  --nav-font-color: #45C4B0;
+  --nav-background-color: #012030;
+  --nav-hover-font-color: #45C4B0;
+  --nav-hover-background-color: #13678A;
 
   /* Breakpoints */
   --breakpoint-sm: 576px;
@@ -38,11 +39,13 @@
   --breakpoint-xl: 1200px;
 }
 
+
 /* set default font style and spacing */
 html {
   background-color: var(--background-color);
   font-family: var(--font-family);
   font-size: 120%;
+  color: var(--accent1-color)
 }
 
 h1 {
@@ -60,6 +63,8 @@ h2 {
 h3 {
   font-size: var(--h3-size);
   font-weight: var(--h3-weight);
+  margin: 0;
+  min-width: 380px;
 }
 
 p {
@@ -69,3 +74,34 @@ p {
 ul {
   list-style: none;
 }
+
+img {
+  width: 100%;
+}
+/* End of default font and styles */
+
+
+/* Header section */
+header {
+  display: flex;
+}
+
+.logo {
+  width: 60px;
+  height: fit-content;
+  margin: .2rem 0 0 .2rem;
+}
+
+.header-title-container {
+  margin: auto 0 0 1rem;
+}
+
+.menu-button-container {
+  margin: auto .2rem auto auto;
+}
+
+.menu-button {
+  width: 40px;
+}
+/* End of header Section */
+
