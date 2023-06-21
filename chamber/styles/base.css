@@ -42,11 +42,15 @@
 
 
 /* Set default font style and spacing */
+* {
+  box-sizing: border-box;
+}
+
 html {
   background-color: var(--background-color);
   font-family: var(--font-family);
   font-size: 120%;
-  color: var(--accent1-color)
+  color: var(--accent1-color);
 }
 
 h1 {
@@ -81,6 +85,18 @@ ul {
 img {
   width: 100%;
 }
+
+.button {
+  text-decoration: none;
+  background-color: var(--primary-color);
+  box-shadow: 2px 2px 4px #012030;
+  border-radius: 4px;
+  text-align: center;
+  padding: .3rem;
+  color: white;
+  font-weight: 200;
+  text-shadow: 2px 2px 2px #012030;
+}
 /* End of default font and styles */
 
 
@@ -105,19 +121,6 @@ header {
 
 .menu-button {
   width: 40px;
-}
-
-.button {
-  text-decoration: none;
-  background-color: var(--primary-color);
-  border: 1px solid var(--accent1-color);
-  box-shadow: 1px 1px 6px #012030;
-  border-radius: 4px;
-  text-align: center;
-  padding: .2rem;
-  color: white;
-  font-weight: 200;
-  text-shadow: 2px 2px 2px #012030;
 }
 /* End of mobile header Section */
 
@@ -150,7 +153,7 @@ nav ul {
 /* END of Mobile navigation section */
 
 
-/* HERO Section */
+/* Mobile. HERO Section */
 .hero-container {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -159,9 +162,8 @@ nav ul {
 .hero-image {
   grid-column: 1/9;
   grid-row: 1/7;
-  border: 2px solid var(--accent1-color);
-  box-sizing: border-box;
   border-radius: 4px;
+
 }
 
 .hero-header {
@@ -177,4 +179,26 @@ nav ul {
 .hero-call-to-action {
   grid-column: 2/4;
   grid-row: 5/6;
+}
+/* END of Mobile HERO Section */
+
+
+/* Weather widget */
+.weather-widget {
+  margin: 1rem 0;
+  /* display: flex;
+  flex-direction: column; */
+  width: 100%;
+  overflow: hidden;
+}
+
+.moving-text {
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
 }
