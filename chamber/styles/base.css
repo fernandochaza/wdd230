@@ -12,7 +12,7 @@
   --header-font-family: "Raleway", sans-serif;
   --main-font-family: "Raleway", sans-serif;
   --nav-font-family: "Raleway", sans-serif;
-  --h1-size: 2.5rem;
+  --h1-size: 2rem;
   --h1-weight: 800;
   --h2-size: 1.5rem;
   --h2-weight: 600;
@@ -53,6 +53,7 @@ h1 {
   font-family: var(--header-font-family);
   font-size: var(--h1-size);
   font-weight: var(--h1-weight);
+  margin: 0
 }
 
 h2 {
@@ -105,6 +106,19 @@ header {
 .menu-button {
   width: 40px;
 }
+
+.button {
+  text-decoration: none;
+  background-color: var(--primary-color);
+  border: 1px solid var(--accent1-color);
+  box-shadow: 1px 1px 6px #012030;
+  border-radius: 4px;
+  text-align: center;
+  padding: .2rem;
+  color: white;
+  font-weight: 200;
+  text-shadow: 2px 2px 2px #012030;
+}
 /* End of mobile header Section */
 
 
@@ -132,4 +146,35 @@ nav ul {
   font-size: var(--nav-font-size);
   line-height: 3rem;
   padding-right: 50px;
+}
+/* END of Mobile navigation section */
+
+
+/* HERO Section */
+.hero-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.hero-image {
+  grid-column: 1/9;
+  grid-row: 1/7;
+  border: 2px solid var(--accent1-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.hero-header {
+  grid-column: 2/8;
+  grid-row: 2/4;
+  background-color:rgba(255, 255, 255, 0.555);
+  border-radius: 8px;
+  box-shadow: 1px 1px 6px #012030;
+  padding: .5rem;
+  text-align: center;
+}
+
+.hero-call-to-action {
+  grid-column: 2/4;
+  grid-row: 5/6;
 }
