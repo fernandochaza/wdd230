@@ -16,7 +16,7 @@
   --h1-weight: 800;
   --h2-size: 1.5rem;
   --h2-weight: 700;
-  --h3-size: 1.2rem;
+  --h3-size: 1.1rem;
   --h3-weight: 600;
   --paragraph-size: 1rem;
   --paragraph-weight: 200;
@@ -65,7 +65,7 @@ h2 {
   font-size: var(--h2-size);
   font-weight: var(--h2-weight);  
   background-color: #13678A;
-  padding: 1rem 1rem;
+  padding: .5rem 1rem;
   border-bottom-left-radius: 64px;
   border-top-left-radius: 64px;
   color: var(--heading-color-on-color);
@@ -109,11 +109,13 @@ img {
 /* Mobile. Header section */
 header {
   display: flex;
+  background-color: ;
 }
 
 .logo {
-  width: 60px;
+  width: 50px;
   height: fit-content;
+  align-self: center;
   margin: .2rem 0 0 .2rem;
 }
 
@@ -121,12 +123,18 @@ header {
   margin: auto 0 0 1rem;
 }
 
+header h3 {
+  line-height: 1rem;
+}
+
 .menu-button-container {
   margin: auto .2rem 0 auto;
+  line-height: 0;
+  padding: 0;
 }
 
 .menu-button {
-  width: 40px;
+  width: 36px;
 }
 /* End of mobile header Section */
 
@@ -138,8 +146,8 @@ nav {
 }
 
 nav ul {
-  width: 100%;
-  margin: .2rem 0;
+  width: 75%;
+  margin: .5rem 0;
   background-color: var(--nav-background-color);
   border-radius: 4px;
   border-bottom-left-radius: 64px;
@@ -170,7 +178,6 @@ nav ul {
   grid-column: 1/9;
   grid-row: 1/7;
   border-radius: 4px;
-
 }
 
 .hero-header {
@@ -220,7 +227,6 @@ nav ul {
 
 
 /* Mobile Upcoming Events Section*/
-
 .event-card {
   margin: 0 .2rem 2rem .2rem;
   display: flex;
@@ -235,3 +241,4 @@ nav ul {
   width: 32px;
   align-self: flex-end;
 }
+/* END of /* Mobile Upcoming Events Section*/
