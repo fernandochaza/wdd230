@@ -1,11 +1,11 @@
 /* Global CSS variables */
 :root {
   /* Color palette */
-  --primary-color: #13678A;
-  --secondary-color: #45C4B0;
+  --primary-color: #13678a;
+  --secondary-color: #45c4b0;
   --accent1-color: #012030;
-  --accent2-color: #9AEBA3;
-  --accent3-color: #DAFDBA;
+  --accent2-color: #9aeba3;
+  --accent3-color: #dafdba;
 
   /* Fonts */
   --font-family: "Poppins", sans-serif;
@@ -27,11 +27,11 @@
   --heading-color-on-white: #012030;
   --heading-color-on-color: white;
   --paragraph-color-on-white: #012030;
-  --paragraph-color-on-color: #45C4B0;
+  --paragraph-color-on-color: #45c4b0;
   --nav-font-color: white;
-  --nav-background-color: #13678A;
-  --nav-hover-font-color: #45C4B0;
-  --nav-hover-background-color: #13678A;
+  --nav-background-color: #13678a;
+  --nav-hover-font-color: #45c4b0;
+  --nav-hover-background-color: #13678a;
 
   /* Breakpoints */
   --breakpoint-sm: 576px;
@@ -39,7 +39,6 @@
   --breakpoint-lg: 1024px;
   --breakpoint-xl: 1200px;
 }
-
 
 /* Set default font style and spacing */
 * {
@@ -57,16 +56,16 @@ h1 {
   font-family: var(--header-font-family);
   font-size: var(--h1-size);
   font-weight: var(--h1-weight);
-  margin: 0
+  margin: 0;
 }
 
 h2 {
   margin: 0;
   font-family: var(--header-font-family);
   font-size: var(--h2-size);
-  font-weight: var(--h2-weight);  
-  background-color: #13678A;
-  padding: .5rem 1rem;
+  font-weight: var(--h2-weight);
+  background-color: #13678a;
+  padding: 0.5rem 1rem;
   border-bottom-left-radius: 64px;
   border-top-left-radius: 64px;
   color: var(--heading-color-on-color);
@@ -99,14 +98,14 @@ img {
 
 .button {
   text-decoration: none;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   box-shadow: 2px 2px 4px var(--accent1-color);
   border-radius: 4px;
   text-align: center;
-  padding: .3rem;
-  color: white;
-  font-weight: 200;
-  text-shadow: 1px 1px 2px var(--accent1-color);
+  padding: 0.3rem;
+  color: var(--accent1-color);
+  font-weight: 300;
+  text-shadow: 1px 1px 2px var(--accent2-color);
 }
 
 hr {
@@ -114,7 +113,6 @@ hr {
   width: 100%;
 }
 /* End of default font and styles */
-
 
 /* Mobile. Header section */
 header {
@@ -125,7 +123,7 @@ header {
   width: 50px;
   height: fit-content;
   align-self: center;
-  margin: .2rem 0 0 .2rem;
+  margin: 0.2rem 0 0 0.2rem;
 }
 
 .header-title-container {
@@ -137,7 +135,7 @@ header h3 {
 }
 
 .menu-button-container {
-  margin: auto .2rem 0 auto;
+  margin: auto 0.2rem 0 auto;
   line-height: 0;
   padding: 0;
 }
@@ -147,7 +145,6 @@ header h3 {
 }
 /* End of mobile header Section */
 
-
 /* Mobile navigation section */
 nav {
   display: flex;
@@ -156,7 +153,7 @@ nav {
 
 nav ul {
   width: 75%;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   background-color: var(--nav-background-color);
   border-radius: 4px;
   border-bottom-left-radius: 64px;
@@ -176,7 +173,6 @@ nav ul {
 }
 /* END of Mobile navigation section */
 
-
 /* Mobile. HERO Section */
 .hero-container {
   display: grid;
@@ -192,10 +188,10 @@ nav ul {
 .hero-header {
   grid-column: 2/8;
   grid-row: 2/4;
-  background-color:rgba(255, 255, 255, 0.555);
+  background-color: rgba(255, 255, 255, 0.555);
   border-radius: 8px;
   box-shadow: 1px 1px 6px var(--accent1-color);
-  padding: .5rem;
+  padding: 0.5rem;
   text-align: center;
 }
 
@@ -204,7 +200,6 @@ nav ul {
   grid-row: 5/6;
 }
 /* END of Mobile HERO Section */
-
 
 /* Mobile. Weather widget */
 .weather-widget {
@@ -222,11 +217,14 @@ nav ul {
 }
 
 @keyframes marquee {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 /* END of Mobile Weather Widget*/
-
 
 /* Directory widget section */
 .directory-button-container {
@@ -234,16 +232,15 @@ nav ul {
 }
 /* END of Directory widget section */
 
-
 /* Mobile Upcoming Events Section*/
 .event-card {
-  margin: 0 .2rem 2rem .2rem;
+  margin: 0 0.2rem 2rem 0.2rem;
   display: flex;
   flex-direction: column;
 }
 
 .event-card p {
-  margin: .3rem auto;
+  margin: 0.3rem auto;
 }
 
 .event-card-image {
@@ -251,7 +248,6 @@ nav ul {
   align-self: flex-end;
 }
 /* END of Mobile Upcoming Events Section*/
-
 
 /* Mobile Spotlights Section */
 .business-card {
@@ -273,7 +269,7 @@ nav ul {
 
 .business-card p,
 .business-card h3 {
-  margin: .2rem;
+  margin: 0.2rem;
 }
 
 .business-card-button {
@@ -282,5 +278,37 @@ nav ul {
 }
 /* END of Mobile Spotlights Section */
 
-
 /* Footer */
+iframe {
+  display: none;
+}
+
+footer img {
+  width: 24px;
+}
+
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--secondary-color);
+  padding: 1rem 0.5rem;
+  border-radius: 4px;
+}
+
+.location,
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-sign {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.project-sign p {
+  font-size: 0.75rem;
+}
