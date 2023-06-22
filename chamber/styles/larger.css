@@ -1,2 +1,120 @@
-@media screen and (min-width: var(--breakpoint-md)) {
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 110%;
+  }
+
+  .button {
+    padding: 0.6rem;
+    font-weight: 400;
+  }
+  
+
+  /* Header and nav */
+  .header-title-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: .8rem;
+  }
+
+  .header-title-container h3 {
+    font-size: 1.7rem;
+  }
+
+  .menu-button-container {
+    display: none;
+  }
+
+  nav ul {
+    flex-direction: row;
+    width: 100%;
+    border-radius: 4px;
+    justify-content: space-evenly;
+  }
+
+
+  /* Hero Section */
+  .hero-header {
+    padding: 2rem;
+  }
+
+
+  /* Upcoming Events Section */
+  .events-section {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+  }
+
+  .events-section h2 {
+    grid-column: 1/17;
+  }
+
+  .events-left-frame {
+    background-color: var(--primary-color);
+    grid-column: 1/4;
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
+    margin: 0 1rem 1rem 0;
+  }
+
+  .event-card {
+    margin-top: 1rem;
+    justify-content: space-evenly;
+  }
+
+  .event-1 {
+    grid-column: 4/7;
+  }
+
+  .event-2 {
+    grid-column: 8/11;
+  }
+
+  .event-3 {
+    grid-column: 12/15;
+  }
+
+  .event-card hr {
+    display: none;
+  }
+
+
+    /* Spotlights Section */
+  .business-section{
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+  }
+
+  .business-section h2 {
+    grid-column: 1/17;
+  }
+
+  .spotlights-left-frame {
+    background-color: var(--primary-color);
+    grid-column: 1/4;
+    grid-row: 2/10;
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
+    margin: 0 1rem 1rem 0;
+  }
+
+  .business-1 {
+    grid-column: 4/10;
+    grid-row: 2/4;
+  }
+
+  .business-2 {
+    grid-column: 11/17;
+    grid-row: 2/4;
+  }
+
+  .business-3 {
+    grid-column: 4/10;
+    grid-row: 6/8;
+  }
+
+  .business-4 {
+    grid-column: 11/17;
+    grid-row: 6/8;
+  }
+
 }
