@@ -61,6 +61,7 @@ h1 {
 }
 
 h2 {
+  margin: 0;
   font-family: var(--header-font-family);
   font-size: var(--h2-size);
   font-weight: var(--h2-weight);  
@@ -71,6 +72,10 @@ h2 {
   color: var(--heading-color-on-color);
 }
 
+section h2 {
+  margin-bottom: 1rem;
+}
+
 h3 {
   font-size: var(--h3-size);
   font-weight: var(--h3-weight);
@@ -78,7 +83,7 @@ h3 {
 }
 
 p {
-  line-height: 1.2rem;
+  line-height: 1.3rem;
   margin: 0;
 }
 
@@ -95,13 +100,18 @@ img {
 .button {
   text-decoration: none;
   background-color: var(--primary-color);
-  box-shadow: 2px 2px 4px #012030;
+  box-shadow: 2px 2px 4px var(--accent1-color);
   border-radius: 4px;
   text-align: center;
   padding: .3rem;
   color: white;
   font-weight: 200;
-  text-shadow: 1px 1px 2px #012030;
+  text-shadow: 1px 1px 2px var(--accent1-color);
+}
+
+hr {
+  border: 1px solid #0120302f;
+  width: 100%;
 }
 /* End of default font and styles */
 
@@ -109,7 +119,6 @@ img {
 /* Mobile. Header section */
 header {
   display: flex;
-  background-color: ;
 }
 
 .logo {
@@ -185,7 +194,7 @@ nav ul {
   grid-row: 2/4;
   background-color:rgba(255, 255, 255, 0.555);
   border-radius: 8px;
-  box-shadow: 1px 1px 6px #012030;
+  box-shadow: 1px 1px 6px var(--accent1-color);
   padding: .5rem;
   text-align: center;
 }
@@ -241,4 +250,37 @@ nav ul {
   width: 32px;
   align-self: flex-end;
 }
-/* END of /* Mobile Upcoming Events Section*/
+/* END of Mobile Upcoming Events Section*/
+
+
+/* Mobile Spotlights Section */
+.business-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border: 1px solid #0120302f;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.business-card-image {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.business-card p,
+.business-card h3 {
+  margin: .2rem;
+}
+
+.business-card-button {
+  width: max-content;
+  align-self: center;
+}
+/* END of Mobile Spotlights Section */
+
+
+/* Footer */
