@@ -252,7 +252,7 @@ nav ul {
 /* END of Mobile Upcoming Events Section*/
 
 /* Mobile Spotlights Section */
-.business-card {
+.spotlight-card {
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
@@ -264,17 +264,17 @@ nav ul {
   border-bottom-left-radius: 4px;
 }
 
-.business-card-image {
+.spotlight-card-image {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
 
-.business-card p,
-.business-card h3 {
+.spotlight-card p,
+.spotlight-card h3 {
   margin: 0.2rem;
 }
 
-.business-card-button {
+.spotlight-card-button {
   width: max-content;
   align-self: center;
 }

@@ -1,0 +1,39 @@
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 100%;
+  }
+
+  /* Header and nav */
+  header {
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  nav {
+    background-color: var(--primary-color);
+    margin-top: 0.2rem;
+  }
+
+  nav ul {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  /* Hero Section */
+  .hero-container {
+    width: 70%;
+    margin: 1rem auto;
+  }
+
+  /* Main Section */
+  main {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  /* Footer Section */
+  .site-footer {
+    justify-content: center;
+    gap: 60px;
+  }
+}

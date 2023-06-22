@@ -87,14 +87,14 @@
   }
 
 
-    /* Spotlights Section */
-  .business-section{
+  /* Spotlights Section */
+  .spotlights-section{
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     margin-top: 1rem;
   }
 
-  .business-section h2 {
+  .spotlights-section h2 {
     grid-column: 1/17;
   }
 
@@ -107,49 +107,66 @@
     margin: 0 1rem 1rem 0;
   }
 
-  .business-card {
+  .spotlight-1 {
+    grid-column: 4/10;
+    grid-row: 2/4;
+  }
+
+  .spotlight-2 {
+    grid-column: 11/17;
+    grid-row: 2/4;
+    margin-right: .2rem;
+  }
+
+  .spotlight-3 {
+    grid-column: 4/10;
+    grid-row: 6/8;
+  }
+
+  .spotlight-4 {
+    grid-column: 11/17;
+    grid-row: 6/8;
+    margin-right: .2rem;
+  }
+
+  .spotlight-card {
     border: none;
     border-bottom-left-radius: 32px;
     box-shadow: var(--accent1-color) 0px 3px 16px 0px;
   }
 
-  .business-1 {
-    grid-column: 4/10;
-    grid-row: 2/4;
-  }
-
-  .business-2 {
-    grid-column: 11/17;
-    grid-row: 2/4;
-    margin-right: .2rem;
-  }
-
-  .business-3 {
-    grid-column: 4/10;
-    grid-row: 6/8;
-  }
-
-  .business-4 {
-    grid-column: 11/17;
-    grid-row: 6/8;
-    margin-right: .2rem;
-  }
-
-  .business-card p {
+  .spotlight-card p {
     margin-bottom: 1rem;
   }
 
-  .business-card h3 {
+  .spotlight-card h3 {
     margin-top: 1rem;
   }
 
-  .business-card h3,
-  .business-card p{
+  .spotlight-card h3,
+  .spotlight-card p{
     margin-left: 1rem;
     margin-right: 1rem;
   }
 
-  .business-card-button {
+  .spotlight-card-button {
     margin-top: auto;
+  }
+  /* END of Spotlights Section */
+
+
+  /* Footer */
+  footer img {
+    width: 30px;
+  }
+
+  .site-footer {
+    justify-content: space-around;
+  }
+
+  .location,
+  .contact {
+    flex-direction: row;
+    gap: 20px;
   }
 }
