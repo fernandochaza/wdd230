@@ -21,6 +21,7 @@
   --paragraph-size: 1rem;
   --paragraph-weight: 200;
   --nav-font-size: 1.3rem;
+  --nav-weight: 600;
 
   /* Elements colors */
   --background-color: white;
@@ -166,7 +167,7 @@ nav ul {
 .nav-link {
   text-decoration: none;
   color: var(--nav-font-color);
-  font-weight: var(--paragraph-weight);
+  font-weight: var(--nav-weight);
   font-size: var(--nav-font-size);
   line-height: 3rem;
   padding-right: 50px;
