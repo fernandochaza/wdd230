@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Set the viewport to make the website look good on all devices:-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Set page title-->
+    <title>Lazy Load Demonstration</title>
+
+    <!-- Meta tags: Description an author. Used in Google results page -->
+    <meta name="description" content="Testing lazy load for images" />
+    <meta name="author" content="Fernando Chazarreta" />
+
+    <!-- External CSS files -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles/lazyload.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <h1>Image Lazy Loading Demonstration</h1>
+    </header>
+    <main>
+      <picture
+        ><img
+          src="https://picsum.photos/400/600?random=1"
+          alt="Random Image"
+          loading="lazy"
+          width="400"
+          height="600"
+      /></picture>
+      <picture
+        ><img
+          src="https://picsum.photos/400/600?random=2"
+          alt="Random Image"
+          loading="lazy"
+          width="400"
+          height="600"
+      /></picture>
+      <picture
+        ><img
+          src="https://picsum.photos/400/600?random=3"
+          alt="Random Image"
+          loading="lazy"
+          width="400"
+          height="600"
+      /></picture>
+      <picture
+        ><img
+          src="https://picsum.photos/400/600?random=4"
+          alt="Random Image"
+          loading="lazy"
+          width="400"
+          height="600"
+      /></picture>
+      <picture
+        ><img
+          src="https://picsum.photos/400/600?random=5"
+          alt="Random Image"
+          loading="lazy"
+          width="400"
+          height="600"
+      /></picture>
+      <picture
+        ><img
+          src="https://picsum.photos/400/600?random=6"
+          alt="Random Image"
+          loading="lazy"
+          width="400"
+          height="600"
+      /></picture>
+    </main>
+    <footer>
+      <div class="project-sign">
+        <p>&copy; 2023 &bull; Fernando Chazarreta &bull; Argentina</p>
+        <p>BYU WDD230 - Front End Development</p>
+        <p class="last-modification">Last Modification:</p>
+      </div>
+    </footer>
+    <script src="lazyload.js"></script>
+  </body>
+</html>
