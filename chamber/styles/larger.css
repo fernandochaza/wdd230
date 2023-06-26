@@ -24,6 +24,10 @@
     display: none;
   }
 
+  nav {
+    display: flex;
+  }
+
   nav ul {
     flex-direction: row;
     width: 100%;
@@ -33,6 +37,10 @@
 
 
   /* Hero Section */
+  .hero-container {
+    margin-top: 0;
+  }
+
   .hero-header {
     padding: 2rem;
   }

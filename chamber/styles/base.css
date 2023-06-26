@@ -142,14 +142,18 @@ header h3 {
 }
 
 .menu-button {
-  width: 36px;
+  font-size: 36px;
 }
 /* End of mobile header Section */
 
 /* Mobile navigation section */
 nav {
-  display: flex;
+  display: none;
   flex-direction: row-reverse;
+}
+
+nav.show {
+  display: flex;
 }
 
 nav ul {
@@ -178,6 +182,7 @@ nav ul {
 .hero-container {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
+  margin: 0.2rem 0;
 }
 
 .hero-image {
