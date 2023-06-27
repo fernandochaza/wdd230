@@ -1,11 +1,12 @@
 export function getUserVisits() {
-  const userVisits = localStorage.getItem('visitsCount') || 0;
+  const userVisits = JSON.parse(localStorage.getItem('visitsCount')) || 0;
   return userVisits;
 };
 
 export function addNewVisit() {
   const userVisits = getUserVisits() ;
-  localStorage.setItem('visitsCount', userVisits+1);
+  userVisits++;
+  localStorage.setItem('visitsCount', JSON.stringify(userVisits));
 };
 
 
