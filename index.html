@@ -53,19 +53,13 @@
       />
       <h1>Fernando Chazarreta</h1>
       <div class="dark-mode-container">
-        <img
-          class="dark-light-button"
-          src="images/dark-mode.svg"
-          alt="Dark Mode Button"
-        />
+        <button aria-label="Toggle Dark Mode" class="dark-light-button">
+          ☀
+        </button>
       </div>
     </header>
     <div class="menu-button-container">
-      <img
-        class="menu-button"
-        src="images/hamburger-menu.svg"
-        alt="Menu Button"
-      />
+      <button aria-label="Toggle Navigation Menu" class="menu-button">☰</button>
     </div>
     <nav id="my-nav">
       <ul>
@@ -76,11 +70,31 @@
       </ul>
     </nav>
     <main>
+      <section class="hero-container">
+        <h2 class="hero-label">Buenos Aires Temple</h2>
+        <picture>
+          <source
+            media="(max-width: 768px) 768w"
+            srcset="images/buenos-aires-landscape-768w.webp"
+          />
+          <source
+            media="(min-width: 769px) 900x"
+            srcset="images/buenos-aires-landscape-900w.webp"
+          />
+          <img
+            class="hero-image"
+            src="images/buenos-aires-landscape-768w.webp"
+            alt="Entrance to the Buenos Aires Temple"
+            width="768"
+            height="480"
+          />
+        </picture>
+      </section>
       <div class="title-container">
         <h2 class="title">WDD 230: Web Frontend Development</h2>
       </div>
       <section class="card">
-        <h3 class="card-header">Learni ng Activities</h3>
+        <h3 class="card-header">Learning Activities</h3>
         <ul>
           <li>
             Week 02 -
@@ -102,16 +116,31 @@
           </li>
           <li>Week 03 - <a href="week03/images/landscape.webp">WebP</a></li>
           <li>Week 03 - <a href="week03/lazyload.html">Lazy Load</a></li>
-          <li>Week 03 - <a href="week03/responsive-images.html">Responsive Images</a></li>
+          <li>
+            Week 03 -
+            <a href="week03/responsive-images.html">Responsive Images</a>
+          </li>
         </ul>
       </section>
       <section class="card">
         <h3 class="card-header">Information</h3>
         <div class="location">[Location Placeholder]</div>
         <div class="weather">[Weather Placeholder]</div>
-        <div class="visits">[Visits Placeholder]</div>
+        <div class="visits"></div>
       </section>
     </main>
+    <aside class="location-frame-container">
+      <iframe
+        class="location-frame"
+        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2749.345414792822!2d-67.51932892292876!3d-46.44185252453471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgorosito!5e0!3m2!1sen!2sar!4v1687830675884!5m2!1sen!2sar"
+        width="400"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </aside>
     <footer>
       <p>
         &copy; <span id="year"></span> &bull; Fernando Chazarreta &bull;
@@ -119,8 +148,6 @@
       </p>
       <p id="lastModified"></p>
     </footer>
-    <script src="scripts/getDate.js"></script>
-    <script src="scripts/toggleMenu.js"></script>
-    <script src="scripts/toggleDarkMode.js"></script>
+    <script src="scripts/main.js" type="module"></script>
   </body>
 </html>

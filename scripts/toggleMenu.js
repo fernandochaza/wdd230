@@ -1,14 +1,14 @@
-const menuButton = document.querySelector('.menu-button');
-const nav = document.querySelector('#my-nav');
+export function toggleMenu() {
+  const menuButton = document.querySelector(".menu-button");
+  const nav = document.querySelector("#my-nav");
 
-menuButton.addEventListener('click', () => {
-    nav.classList.toggle('show');
-    const menuImage = menuButton.getAttribute('src');
-    if (menuImage.includes('hamburger')) {
-        menuButton.setAttribute('src', "images/menu-cross.svg");
+  menuButton.addEventListener("click", () => {
+    nav.classList.toggle("show");
+    const menuImage = menuButton.textContent;
+    if (menuImage == "☰") {
+      menuButton.textContent = "✖";
+    } else {
+      menuButton.textContent = "☰";
     }
-    else
-    {
-        menuButton.setAttribute('src', "images/hamburger-menu.svg");
-    }
-});
+  })
+};
