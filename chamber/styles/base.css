@@ -201,11 +201,25 @@ nav ul {
   text-align: center;
 }
 
+.hero-header.discover {
+  grid-row: 2/6;
+}
+
 .hero-call-to-action {
   grid-column: 2/4;
   grid-row: 5/6;
 }
 /* END of Mobile HERO Section */
+
+main {
+  max-width: 900px;
+}
+
+.side-image img {
+  border-radius: 4px;
+  width: 100%;
+  height: auto;
+}
 
 /* Mobile. Weather widget */
 .weather-widget {
@@ -239,6 +253,15 @@ nav ul {
 }
 /* END of Directory widget section */
 
+/* Discover Page */
+.side-images-container {
+
+}
+
+.side-images-container img {
+  width: 100%;
+  height: auto;
+}
 
 /* Mobile Upcoming Events Section*/
 .event-card {

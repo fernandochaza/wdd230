@@ -1,9 +1,9 @@
-export function getUserVisits() {
+function getUserVisits() {
   const userVisits = JSON.parse(localStorage.getItem('visitsCount')) || 0;
   return userVisits;
 };
 
-export function addNewVisit() {
+function addNewVisit() {
   let userVisits = getUserVisits() ;
   userVisits++;
   console.log(userVisits);
