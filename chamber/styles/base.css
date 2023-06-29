@@ -188,6 +188,11 @@ nav ul {
 .hero-image {
   grid-column: 1/9;
   grid-row: 1/7;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
   border-radius: 4px;
 }
 
@@ -215,6 +220,11 @@ main {
   max-width: 900px;
 }
 
+.side-image figcaption {
+  text-align: center;
+  font-size: .8rem;
+}
+
 .side-image img {
   border-radius: 4px;
   width: 100%;
@@ -224,8 +234,6 @@ main {
 /* Mobile. Weather widget */
 .weather-widget {
   margin: 1rem 0;
-  /* display: flex;
-  flex-direction: column; */
   width: 100%;
   overflow: hidden;
 }
@@ -254,8 +262,9 @@ main {
 /* END of Directory widget section */
 
 /* Discover Page */
-.side-images-container {
-
+.info-section h3,
+.info-section p {
+  padding: 0 1rem 1rem 1rem;
 }
 
 .side-images-container img {

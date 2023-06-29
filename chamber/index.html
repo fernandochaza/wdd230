@@ -68,11 +68,13 @@
       </ul>
     </nav>
     <section class="hero-container">
-      <img
-        class="hero-image"
-        src="images/gorosito-hero.webp"
-        alt="Hero Background"
-      />
+      <picture class="hero-image">
+        <source media="(max-width: 576px)" srcset="images/gorosito-hero-576-240-30.webp" type="image/webp">
+        <source media="(max-width: 768px)" srcset="images/gorosito-hero-768-320-30.webp" type="image/webp">
+        <source media="(max-width: 900px)" srcset="images/gorosito-hero-900-375-40.webp" type="image/webp">
+        <source media="(min-width: 1024px)" srcset="images/gorosito-hero-1200-500-40.webp" type="image/webp">
+        <img src="images/gorosito-hero-576-240-30.webp" alt="Caleta Olivia's Gorosito statue" width="576" height="240">
+      </picture>
       <h1 class="hero-header">Caleta Olivia<br />Chamber of Commerce</h1>
       <a class="button hero-call-to-action" href="#">Join</a>
     </section>

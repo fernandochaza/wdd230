@@ -68,11 +68,13 @@
       </ul>
     </nav>
     <section class="hero-container discover">
-      <img
-        class="hero-image"
-        src="images/gorosito-hero.webp"
-        alt="Hero Background"
-      />
+      <picture class="hero-image">
+        <source media="(max-width: 576px)" srcset="images/gorosito-hero-576-240-30.webp" type="image/webp">
+        <source media="(max-width: 768px)" srcset="images/gorosito-hero-768-320-30.webp" type="image/webp">
+        <source media="(max-width: 900px)" srcset="images/gorosito-hero-900-375-40.webp" type="image/webp">
+        <source media="(min-width: 1024px)" srcset="images/gorosito-hero-1200-500-40.webp" type="image/webp">
+        <img src="images/gorosito-hero-576-240-30.webp" alt="Caleta Olivia's Gorosito statue" width="576" height="240">
+      </picture>
       <h1 class="hero-header discover">Welcome to<br />Caleta Olivia</h1>
     </section>
     <aside class="weather-widget">
@@ -85,29 +87,69 @@
       <a class="button directory-button" href="#">Directory</a>
     </section>
     <main class="discover-main">
-        <section class="info-section">
-          <h3>Caleta Olivia</h3>
+        <section class="info-section left-text">
+          <h3>A Vibrant Commercial Hub on Argentina's Coast</h3>
           <p>Situated on the picturesque coast of Argentina, Caleta Olivia is a thriving city that serves as a gateway 
             to the remarkable beauty of Patagonia. With a rich history and a promising future, 
             Caleta Olivia has established itself as a prominent commercial and industrial center in the region.
           </p>
           <div class="vertical-division"></div>
           <aside class="side-image">
+            <figure>
             <picture class="side-image-container">
               <source media="(max-width: 576px)" srcset="images/dock-576-30.webp" type="image/webp">
               <source media="(max-width: 768px)" srcset="images/dock-768-30.webp" type="image/webp">
               <source media="(max-width: 900px)" srcset="images/dock-576-30.webp" type="image/webp">
               <source media="(min-width: 1024px)" srcset="images/dock-900-40.webp" type="image/webp">
-              <img src="images/dock-576-30.webp" alt="Responsive Image" width="576" height="323">
+              <img src="images/dock-576-30.webp" alt="Caleta Olivia's old dock" width="576" height="323">
             </picture>
+            <figcaption>A cloudy afternoon at the old Caleta Olivia's dock</figcaption>
+          </figure>
           </aside>
         </section>
 
-        <section>
-          <h3></h3>
+        <section class="info-section right-text">
+          <h3>Demographic Content and Statistics</h3>
+          <p>Boasting a diverse population of approximately 70,000 residents, Caleta Olivia represents a vibrant tapestry of cultures and backgrounds. The city's demographic composition reflects a dynamic mix of people from various ethnicities, creating a multicultural atmosphere that fosters inclusivity and mutual respect. The residents of Caleta Olivia take pride in their community, fostering a strong sense of belonging and camaraderie.
+          </p>
+          <div class="vertical-division"></div>
+          <aside class="side-image">
+            <figure>
+              <picture class="side-image-container">
+                <source media="(max-width: 576px)" srcset="images/dock-576-30.webp" type="image/webp">
+                <source media="(max-width: 768px)" srcset="images/dock-768-30.webp" type="image/webp">
+                <source media="(max-width: 900px)" srcset="images/dock-576-30.webp" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="images/dock-900-40.webp" type="image/webp">
+                <img src="images/dock-576-30.webp" alt="Caleta Olivia's old dock" width="576" height="323">
+              </picture>
+            <figcaption>A cloudy afternoon at the old Caleta Olivia's dock</figcaption>
+            </figure>
+          </aside>
         </section>
-        <section>
-          <h3></h3>
+
+        <section class="info-section left-text">
+          <h3>Economic Profile</h3>
+          <p>Caleta Olivia is renowned for its robust economy, driven by key industries 
+            that contribute to the city's prosperity. The city serves as a vital hub 
+            for the oil and gas sector, playing a significant role in Argentina's energy landscape. 
+            Additionally, the thriving fishing industry and extensive agricultural 
+            activities contribute to the region's economic growth. With a focus on sustainability 
+            and innovation, Caleta Olivia is continuously exploring new avenues for economic 
+            development, attracting investment and creating opportunities for both local and international businesses.
+          </p>
+          <div class="vertical-division"></div>
+          <aside class="side-image">
+            <figure>
+            <picture class="side-image-container">
+              <source media="(max-width: 576px)" srcset="images/dock-576-30.webp" type="image/webp">
+              <source media="(max-width: 768px)" srcset="images/dock-768-30.webp" type="image/webp">
+              <source media="(max-width: 900px)" srcset="images/dock-576-30.webp" type="image/webp">
+              <source media="(min-width: 1024px)" srcset="images/dock-900-40.webp" type="image/webp">
+              <img src="images/dock-576-30.webp" alt="Caleta Olivia's old dock" width="576" height="323">
+            </picture>
+            <figcaption>A cloudy afternoon at the old Caleta Olivia's dock</figcaption>
+          </figure>
+          </aside>
         </section>
 
     </main>
