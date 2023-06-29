@@ -24,7 +24,7 @@ function addNewVisit() {
 export function displayVisits(visitsPlaceholderClassName) {
   const visitsPlaceholder = document.querySelector(visitsPlaceholderClassName);
   if (getNumberOfVisits() == 0) {
-    visitsPlaceholder.textContent = "Welcome! This is your first visit!";
+    visitsPlaceholder.textContent = "Welcome! Let us know if you have any questions.";
     addNewVisit();
   }
   else {

@@ -202,8 +202,9 @@ nav ul {
   background-color: rgba(255, 255, 255, 0.555);
   border-radius: 8px;
   box-shadow: 1px 1px 6px var(--accent1-color);
-  padding: 0.5rem;
+  padding: 0.2rem;
   text-align: center;
+  font-size: 1.6rem;
 }
 
 .hero-header.discover {
@@ -266,6 +267,7 @@ main {
 }
 
 .side-image figcaption {
+  margin-top: .5rem;
   text-align: center;
   font-size: .8rem;
 }
