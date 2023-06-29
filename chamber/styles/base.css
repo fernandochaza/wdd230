@@ -220,16 +220,6 @@ main {
   max-width: 900px;
 }
 
-.side-image figcaption {
-  text-align: center;
-  font-size: .8rem;
-}
-
-.side-image img {
-  border-radius: 4px;
-  width: 100%;
-  height: auto;
-}
 
 /* Mobile. Weather widget */
 .weather-widget {
@@ -262,6 +252,18 @@ main {
 /* END of Directory widget section */
 
 /* Discover Page */
+.side-image figcaption {
+  text-align: center;
+  font-size: .8rem;
+}
+
+.side-image img {
+  border-radius: 4px;
+  width: 100%;
+  height: auto;
+  box-shadow: 2px 2px 12px var(--accent1-color);
+}
+
 .info-section h3,
 .info-section p {
   padding: 0 1rem 1rem 1rem;
@@ -270,6 +272,10 @@ main {
 .side-images-container img {
   width: 100%;
   height: auto;
+}
+
+.figure-bottom {
+  margin-bottom: 3rem;
 }
 
 /* Mobile Upcoming Events Section*/
