@@ -1,15 +1,29 @@
+const passwordInput = document.getElementById('password');
 const confirmationPasswordInput = document.getElementById('password-confirm');
 
-confirmationPasswordInput.addEventListener('input', () => {
-  let formMessage = document.getElementById('form-message');
+const submitButton = document.getElementById('submit');
+let formMessage = document.getElementById('form-message-pass');
 
-  const password = document.getElementById('password').value;
+confirmationPasswordInput.addEventListener('input', () => {
+  const passwordValue = passwordInput.value;
   const confirmationPasswordValue = confirmationPasswordInput.value;
 
-  if (password === confirmationPasswordValue) {
-    formMessage.textContent = "Passwords match";
+  if (passwordValue === confirmationPasswordValue) {
+    formMessage.textContent = "";
   }
   else {
     formMessage.textContent = "(!) Passwords don't match";
+  }
+});
+
+submitButton.addEventListener('click', () => {
+  const passwordValue = passwordInput.value;
+  const confirmationPasswordValue = confirmationPasswordInput.value;
+  
+  if (passwordValue !== confirmationPasswordValue) {
+    passwordInput.value = "";
+    confirmationPasswordInput.value = "";
+    passwordInput.focus();
+    formMessage.textContent = "Please, try again. Passwords must match";
   }
 });

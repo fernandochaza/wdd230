@@ -55,33 +55,37 @@
     </ul>
   </nav>
   <main>
-    <form action="record.html" method="get">
-      <legend>Form Demonstration</legend>
-      <label>Username <input type="text" id="username" name="username" required></label>
-      <label>Password <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" required></label>
-      <label>Repeat Password <input type="password" id="password-confirm" name="password-confirm" pattern="[A-Za-z0-9]{8,}" required></label>
-      <span id="form-message"></span>
-      <label>Email <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"></label>
-      <label>
-        Page Rating 
-        <div class="range-value">
-          <input id="rating-input" type="range" min="1" max="10" value="1" step="1" list="rangevalues">
-          <span id="display-selected-rating">0</span>
-        </div>
-        <datalist id="rangevalues">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-        </datalist>
-      </label>
-      <input type="submit" value="Rate Page">
+    <form id="demo-form" action="record.html" method="get">
+      <fieldset>
+        <legend>Form Demonstration</legend>
+        <label>Username* <input type="text" id="username" name="username" required></label>
+        <label>Password* <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" title="At least 8 characters. Only alphanumeric (a-Z, 0-9)" required></label>
+        <label>Repeat Password* <input type="password" id="password-confirm" name="password-confirm" pattern="[A-Za-z0-9]{8,}" required></label>
+        <div id="form-message-pass"></div>
+        <label>Email <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address in the format user@byui.edu"></label>
+        <div id="form-message-email"></div>
+        <label>
+          Page Rating 
+          <div class="range-value">
+            <input id="rating-input" type="range" min="1" max="10" value="1" step="1" list="rangevalues">
+            <span id="display-selected-rating">0</span>
+          </div>
+          <datalist id="rangevalues">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </datalist>
+        </label>
+        <input id="submit" type="submit" value="Rate Page">
+      </fieldset>
+      
     </form>
   </main>
 
@@ -95,6 +99,7 @@
   <script src="scripts/main.js" type="module"></script>
   <script src="scripts/checkPass.js"></script>
   <script src="scripts/displaySelectedRating.js"></script>
+  <script src="scripts/validateEmail.js"></script>
 
 </body>
 </html>
