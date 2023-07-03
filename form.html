@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Set the viewport to make the website look good on all devices:-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Set page title-->
+  <title>Demonstration Form</title>
+
+  <!-- Meta tags: Description an author. Used in Google results page -->
+  <meta name="description" content="Demonstration Form">
+  <meta name="author" content="Fernando Chazarreta">
+
+  <!-- Meta tags: Open graph properties. Used when the page is shared into Facebook -->
+  <meta property="og:title" content="Demonstration Form">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="[Page Image URL]">
+  <meta property="og:url" content="[Page Home URL]">
+
+  <!-- Google fonts preconnect -->
+
+  <!-- External CSS files -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/form.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <header>
+    <img
+      id="profile-picture"
+      src="images/profile-pic.webp"
+      alt="Fernando Chazarreta's profile picture"
+    >
+    <h1>Fernando Chazarreta</h1>
+    <div class="dark-mode-container">
+      <button aria-label="Toggle Dark Mode" class="dark-light-button">
+        ☀
+      </button>
+    </div>
+  </header>
+  <div class="menu-button-container">
+    <button aria-label="Toggle Navigation Menu" class="menu-button">☰</button>
+  </div>
+  <nav id="my-nav">
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="chamber/index.html">Chamber</a></li>
+      <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+      <li><a href="#">Form</a></li>
+    </ul>
+  </nav>
+  <main>
+    <form action="record.html" method="get">
+      <legend>Form Demonstration</legend>
+      <label>Username <input type="text" id="username" name="username" required></label>
+      <label>Password <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" required></label>
+      <label>Repeat Password <input type="password" id="password-confirm" name="password-confirm" pattern="[A-Za-z0-9]{8,}" required></label>
+      <span id="form-message"></span>
+      <label>Email <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"></label>
+      <label>
+        Page Rating 
+        <div class="range-value">
+          <input id="rating-input" type="range" min="1" max="10" value="1" step="1" list="rangevalues">
+          <span id="display-selected-rating">0</span>
+        </div>
+        <datalist id="rangevalues">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </datalist>
+      </label>
+      <input type="submit" value="Rate Page">
+    </form>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="year"></span> &bull; Fernando Chazarreta &bull;
+      <span id="flag"></span> Argentina
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+  <script src="scripts/main.js" type="module"></script>
+  <script src="scripts/checkPass.js"></script>
+  <script src="scripts/displaySelectedRating.js"></script>
+
+</body>
+</html>

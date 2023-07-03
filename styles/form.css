@@ -1,0 +1,9 @@
+form label,
+form input {
+  display: block;
+}
+
+.range-value {
+  display: flex;
+}
+
