@@ -21,8 +21,17 @@ form label {
   font-size: .8rem;
 }
 
-.range-value {
+#rating-element {
   display: flex;
+  flex-direction: column;
+  width: 50%;
+  position: relative;
+}
+
+
+#display-selected-rating {
+  position: absolute;
+  left: 100%; 
 }
 
 form input {
