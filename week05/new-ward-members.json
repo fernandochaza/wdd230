@@ -1,0 +1,28 @@
+{
+  "family-name": "Chazarreta",
+  "date-moved": "2020-03-14",
+  "members-number": 4,
+  "visited": true,
+  "members-data": [
+    {
+      "name": "Fernando",
+      "gender": "male",
+      "birth-date": "1987-03-24"
+    },
+    {
+      "name": "Melisa",
+      "gender": "female",
+      "birth-date": "1988-03-22"
+    },
+    {
+      "name": "Lucas",
+      "gender": "male",
+      "birth-date": "2007-06-05"
+    },
+    {
+      "name": "Emma",
+      "gender": "female",
+      "birth-date": "2018-03-14"
+    }
+  ]
+}
