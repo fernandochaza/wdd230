@@ -244,6 +244,22 @@
   }
   /* END of Spotlights Section */
 
+  /* FORM */
+  .join-form-wrapper {
+    max-width: 900px;
+    margin-left: 4.8rem;
+  }
+
+  form {
+    width: 80%;
+  }
+
+  form label.top input,
+  form label.top textarea {
+    max-width: 30rem;
+    padding: 1.15rem;
+  }
+
 
   /* Footer */
   footer img {

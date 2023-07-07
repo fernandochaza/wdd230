@@ -400,3 +400,117 @@ footer img {
 .project-sign p {
   font-size: 0.75rem;
 }
+
+/* FORM */
+.join-form-wrapper h1 {
+  margin: 2rem 1rem;
+}
+form fieldset {
+  margin: 2rem .5rem;
+  border: 1px solid var(--accent1-color);
+  border-radius: 10px;
+  padding: .5rem 2%;
+}
+
+form fieldset.bottom {
+  margin-bottom: 0;
+}
+
+form legend {
+  color: var(--accent1-color);
+  margin: 0 .5rem;
+  padding: 0 .5rem;
+}
+
+form label.top{
+  display: block;
+  padding-top: 1rem;
+  font-size: .8rem;
+}
+
+form label.top input,
+form label.top textarea {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: 1rem;
+  width: 100%;
+  background-color: rgba(0,0,0,0.1);
+  transition: all .2s ease-in;
+}
+
+form label.top input:focus,
+form label.top textarea:focus {
+  background-color: white;
+}
+
+form label.sbs {
+  display: block;
+  padding: .75rem 0;
+  color: #555;
+}
+
+form .small-text {
+  margin-top: .5rem;
+  font-size: .8rem;
+  text-align: center;
+}
+
+form input.submit-btn {
+  border: none;
+  background-color: var(--accent1-color);
+  color: white;
+  border-radius: 32px;
+  padding: .75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+}
+
+form .form-message {
+  display: block;
+  height: 1rem;
+  margin: 1rem .5rem;
+  color: red;
+  font-weight: 500;
+}
+
+.benefits {
+  margin-top: 1rem;
+}
+
+.benefits ul {
+  margin: .5rem 1.2rem;
+  list-style: circle;
+}
+
+.benefits ul li {
+  margin-top: .5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+form label.top input:required {
+  border: red solid 2px;
+}
+
+form label.top input:required:valid {
+  border: green solid 2px;
+}
+
+
+.thank-you {
+  margin: 0 1rem;
+}
+
+.thank-you h1 {
+  padding: 2rem 1rem;
+}
+
+.thank-you p {
+  padding-bottom: .5rem;
+}

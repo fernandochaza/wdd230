@@ -35,6 +35,17 @@
     margin: 0 auto;
   }
 
+  /* FORM */
+  form {
+    width: 50%;
+  }
+  
+  form label.top input,
+  form label.top textarea {
+    max-width: 30rem;
+    padding: .95rem;
+  }
+
   /* Footer Section */
   .site-footer {
     justify-content: center;
