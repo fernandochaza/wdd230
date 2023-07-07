@@ -37,7 +37,7 @@
 
   /* FORM */
   form {
-    width: 75%;
+    width: 100%;
   }
   
   form label.top input,
@@ -45,6 +45,20 @@
     max-width: 30rem;
     padding: .95rem;
   }
+
+  .bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    justify-items: start;
+  }
+
+  .bottom ul {
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+  }
+
+
 
   /* Footer Section */
   .site-footer {

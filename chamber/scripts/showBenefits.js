@@ -24,11 +24,6 @@ function showBenefits(level) {
   }
 
   benefits.innerHTML = benefitsContent;
-
-  if (level !== "beginner") {
-    benefits.classList.remove("hidden");
-    benefits.focus();
-  } else {
-    benefits.classList.add("hidden");
-  }
+  benefits.classList.remove("hidden");
+  benefits.focus();
 }

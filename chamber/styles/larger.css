@@ -260,6 +260,9 @@
     padding: 1.15rem;
   }
 
+  .hidden {
+    display: inline-block;
+  }
 
   /* Footer */
   footer img {

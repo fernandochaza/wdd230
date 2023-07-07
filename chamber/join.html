@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Set page title-->
-    <title>Membership Form - Chamber of Commerce</title>
+    <title>Join the Chamber of Commerce</title>
 
     <!-- Meta tags: Description an author. Used in Google results page -->
     <meta
@@ -111,22 +111,52 @@
           <fieldset class="bottom">
             <legend>Membership Level</legend>
             <label class="sbs"
-              ><input type="radio" name="membership" value="non-profit" onclick="showBenefits('non-profit')"/> NP Membership - Free*
+              ><input type="radio" name="membership" value="non-profit" /> NP Membership - Free*
             </label>
+            <div class="benefits hidden">
+              <ul>
+                <li>Networking opportunities with other non-profit organizations</li>
+                <li>Inclusion in the non-profit directory</li>
+                <li>Participation in educational workshops and seminars</li>
+              </ul>
+            </div>
             <label class="sbs"
-              ><input type="radio" name="membership" value="bronze" onclick="showBenefits('bronze')"/> Bronze 
+              ><input type="radio" name="membership" value="bronze" /> Bronze 
               Membership - $50</label
             >
+            <div class="benefits hidden">
+              <ul>
+                <li>Business listing in the online directory</li>
+                <li>Access to chamber events and networking opportunities</li>
+                <li>Educational resources and workshops</li>
+              </ul>
+            </div>
             <label class="sbs"
-              ><input type="radio" name="membership" value="silver" onclick="showBenefits('silver')"/> Silver Membership - $100</label
+              ><input type="radio" name="membership" value="silver" /> Silver Membership - $100</label
             >
+            <div class="benefits hidden">
+              <ul>
+                <li>Enhanced business listing</li>
+                <li>Exclusive invitations to VIP events</li>
+                <li>Access to member-only resources</li>
+              </ul>
+            </div>
             <label class="sbs"
-              ><input type="radio" name="membership" value="gold" onclick="showBenefits('gold')" /> Gold Membership - $200</label
+              ><input type="radio" name="membership" value="gold" /> Gold Membership - $200</label
             >
+            <div class="benefits hidden">
+              <ul>
+                <li>Premier business listing</li>
+                <li>Recognition as a Gold Member</li>
+                <li>Priority access to chamber leadership</li>
+                <li>Speaking opportunities at chamber events</li>
+                <li>Customized marketing and promotional support</li>
+              </ul>
+            </div>
             <p class="small-text">
               *NP Membership is for non profit <br>organizations and there is no fee.
             </p>
-            <section id="benefits" class="benefits hidden"><h3>Membership Benefits</h3></section>
+              <!-- <section id="benefits" class="benefits hidden"><h3>Membership Benefits</h3></section> -->
           </fieldset>
           <input type="hidden" name="timestamp" id="timestamp" value="" />
           <div class="form-message" id="form-message"></div>

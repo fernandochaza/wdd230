@@ -448,12 +448,16 @@ form label.top textarea:focus {
 
 form label.sbs {
   display: block;
-  padding: .75rem 0;
+  padding: .5rem 0;
   color: #555;
 }
 
+form label.sbs:not(:first-child) {
+  padding-top: 1rem;
+}
+
 form .small-text {
-  margin-top: .5rem;
+  margin: .5rem 0;
   font-size: .8rem;
   text-align: center;
 }
@@ -478,21 +482,25 @@ form .form-message {
 }
 
 .benefits {
-  margin-top: 1rem;
+  margin-bottom: .5rem;
 }
 
 .benefits ul {
-  margin: .5rem 1.2rem;
-  list-style: circle;
+  margin: 0rem .95rem;
 }
 
-.benefits ul li {
+.benefits ul li:not(:first-child) {
   margin-top: .5rem;
 }
 
-.hidden {
-  display: none;
+.benefits ul li::before {
+  content: "☑ ";
+  color: var(--secondary-color)
 }
+
+/* .hidden {
+  display: none;
+} */
 
 form label.top input:required {
   border: red solid 2px;
@@ -501,7 +509,6 @@ form label.top input:required {
 form label.top input:required:valid {
   border: green solid 2px;
 }
-
 
 .thank-you {
   margin: 0 1rem;
