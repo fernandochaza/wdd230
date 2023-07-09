@@ -253,6 +253,15 @@ main, header, nav a{
     color: black;
 }
 
+.weather {
+    display: flex;
+    align-items: center;
+}
+
+#weather-info {
+    text-transform: capitalize;
+}
+
 .location-frame-container {
     max-width: 960px;
     margin: 1rem auto;
