@@ -283,3 +283,8 @@ footer p {
     text-align: center;
     color: white;
 }
+
+#list-container a {
+    color: blue;
+    font-weight: 600;
+}

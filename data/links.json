@@ -5,15 +5,15 @@
       "links": [
         {
           "url": "week02/design.html",
-          "title": "Web Design Principles"
+          "title": "Design |"
         },
         {
           "url": "https://codepen.io/fernandochaza/pen/abQNpMY",
-          "title": "Responsive Navigation"
+          "title": " Responsive Web |"
         },
         {
           "url": "week02/bom.html",
-          "title": "Manipulating the DOM"
+          "title": " The DOM"
         }
       ]
     },
@@ -22,15 +22,15 @@
       "links": [
         {
           "url": "week03/images/landscape.webp",
-          "title": "WebP Images"
+          "title": "WebP |"
         },
         {
           "url": "week03/lazyload.html",
-          "title": "Lazy Loading"
+          "title": " Lazy |"
         },
         {
           "url": "week03/responsive-images.html",
-          "title": "Responsive Images"
+          "title": " Responsive Images"
         }
       ]
     },
@@ -39,19 +39,19 @@
       "links": [
         {
           "url": "https://codepen.io/fernandochaza/pen/eYQWedV",
-          "title": "Pseudo-classes"
+          "title": "Pseudo-classes |"
         },
         {
           "url": "https://drive.google.com/file/d/1ToZmsOtrpvndKpxdvYWjitUX4cdEaOzD/view?usp=sharing",
-          "title": "CSS Combinators"
+          "title": " CSS Combinators |"
         },
         {
           "url": "week04/tablebuild.html",
-          "title": "HTML Tables"
+          "title": " Tables |"
         },
         {
           "url": "week04/form-start/index.html",
-          "title": "HTML Forms"
+          "title": " Forms"
         }
       ]
     },
@@ -60,19 +60,19 @@
       "links": [
         {
           "url": "https://codepen.io/fernandochaza/pen/PoxJRBrweek04/form-start/index.html",
-          "title": "Pseudo-elements"
+          "title": "Pseudo-elements |"
         },
         {
           "url": "week05/new-ward-members.json",
-          "title": "Working with JSON data"
+          "title": " JSON |"
         },
         {
           "url": "week05/prophets.html",
-          "title": "The Fetch API"
+          "title": " Fetch API |"
         },
         {
           "url": "week05/weather.html",
-          "title": "Consuming a third-party API"
+          "title": " Third-party API"
         }
       ]
     }
