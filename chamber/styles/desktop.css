@@ -72,7 +72,7 @@
     min-width: 1024px;
   }
 
-  .members-section .members-container {
+  .members-section .members-container.card {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
