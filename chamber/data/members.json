@@ -1,0 +1,60 @@
+{
+  "members": [
+    {
+      "name": "Corralón Patagónico",
+      "address": "Gobernador Gregores 1094",
+      "phone": "0297 485-1612",
+      "website": "https://corralonpatagonico.com/",
+      "img": "./images/corralon-800-640.webp",
+      "membership-level": "Silver"
+    },
+    {
+      "name": "E-MAT Construcciones",
+      "address": "Juan Pablo Segundo 178",
+      "phone": "0297 508-1092",
+      "website": "https://www.facebook.com/p/E-MAT-100081281560995/",
+      "img": "./images/emat-800-640.webp",
+      "membership-level": "Gold"
+    },
+    {
+      "name": "Hotel La Restinga",
+      "address": "Eva Perón 1873",
+      "phone": "0297 483-0517",
+      "website": "https://www.facebook.com/larestingarestaurante/",
+      "img": "./images/restinga-800-640.webp",
+      "membership-level": "Silver"
+    },
+    {
+      "name": "La Anónima",
+      "address": "Av. del Trabajo 469",
+      "phone": "297 485-3909",
+      "website": "https://www.laanonimaonline.com/",
+      "img": "./images/anonima-800-640.webp",
+      "membership-level": "Gold"
+    },
+    {
+      "name": "Quonam",
+      "address": "San Martín 233",
+      "phone": "0810-220-3322",
+      "website": "https://www.tienda.quonam.com.ar/",
+      "img": "./images/quonam-800-640.webp",
+      "membership-level": "Silver"
+    },
+    {
+      "name": "Grido Helados",
+      "address": "Av. del Trabajo 181",
+      "phone": "297 432-1955",
+      "website": "https://www.facebook.com/caletaoliviaok/?locale=es_LA",
+      "img": "./images/grido-800-640.webp",
+      "membership-level": "Gold"
+    },
+    {
+      "name": "Lactolandia",
+      "address": "San Martín 190",
+      "phone": "0297 432-1819",
+      "website": "https://www.facebook.com/lactolandia/",
+      "img": "./images/lactolandia-800-640.webp",
+      "membership-level": "Gold"
+    }
+  ]
+}
