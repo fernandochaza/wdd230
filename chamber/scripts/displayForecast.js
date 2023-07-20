@@ -5,14 +5,12 @@ export function displayForecast() {
   const lat = "-46.44";
   const lon = "-67.52";
 
-  // api.openweathermap.org/data/2.5/forecast/daily?lat=44.34&lon=10.99&cnt=7&appid={API key}
-
-  const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&cnt=12&units=metric&appid=${key}`;
+  const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&cnt=22&units=metric&appid=${key}`;
   const file = "scripts/weather.json";
 
   async function apiFetch() {
     try {
-      const response = await fetch(file);
+      const response = await fetch(url);
       if (response.ok) {
         const data = await response.json();
         displayResults(data.list);
@@ -60,10 +58,10 @@ export function displayForecast() {
       const maxTempContainer = document.createElement("p");
 
       const dateObject = new Date(minMaxTemps[day].date);
-      const monthName = dateObject.toLocaleString('default', { month: 'short' });
+      const monthName = dateObject.toLocaleString("default", { month: "short" });
       const dayOfMonth = dateObject.getDate();
       dateStringContainer.textContent = `${monthName} ${dayOfMonth}`;
-      
+
       minTempContainer.textContent = `Min: ${minMaxTemps[day].min}`;
       maxTempContainer.textContent = `Max: ${minMaxTemps[day].max}`;
 
@@ -72,9 +70,7 @@ export function displayForecast() {
       dayContainer.appendChild(maxTempContainer);
 
       forecastContainer.appendChild(dayContainer);
-
-    };
-
+    }
   };
 
   apiFetch();
