@@ -225,7 +225,6 @@ main {
 /* Mobile. Weather card */
 .weather-card {
   box-shadow: 2px 2px 8px var(--accent1-color);
-
   border-radius: 8px;
 
   background: #56CCF2;  /* fallback for old browsers */
@@ -235,40 +234,41 @@ main {
   max-width: 300px;
   width: 80%;
   margin: 1rem auto 1.5rem auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  place-items: center;
-  padding: 1.5rem;
-  font-size: 2rem;
-}
-
-@media screen and (max-width: 400px) {
-  .weather-card {
-    grid-template-columns: 1fr;
-    row-gap: 1.5rem;
-  }
-}
-
-.weather-text {
-  text-align: center;
-  font-weight: 500;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  place-items: center;
+  text-align: center;
+  padding: .5rem;
+  font-size: 1.2rem;
 }
 
 .weather-measure {
-  text-shadow: 2px 2px 6px var(--primary-color);
+  line-height: 2rem;
+  font-weight: 500;
 }
 
-.weather-city {
-  font-size: 1.2rem;
-  text-shadow: 2px 2px 8px var(--primary-color);
+.weather-card img {
+  width: 60px;
 }
 
-.weather-image {
-  filter: blur(1px);
+.daily-forecast {
+  width: 90%;
+  max-width: 580px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
 }
+
+.daily-forecast div {
+  border: 1px solid rgba(0, 0, 0, 0.199);
+  border-radius: 8px;
+  min-width: 130px;
+}
+
+.daily-forecast p {
+  padding: .5rem;
+}
+
 
 /* END of Mobile Weather card*/
 
