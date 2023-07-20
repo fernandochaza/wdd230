@@ -62,8 +62,8 @@ export function displayForecast() {
       const dayOfMonth = dateObject.getDate();
       dateStringContainer.textContent = `${monthName} ${dayOfMonth}`;
 
-      minTempContainer.textContent = `Min: ${minMaxTemps[day].min}`;
-      maxTempContainer.textContent = `Max: ${minMaxTemps[day].max}`;
+      minTempContainer.textContent = `Min: ${minMaxTemps[day].min}°C`;
+      maxTempContainer.textContent = `Max: ${minMaxTemps[day].max}°C`;
 
       dayContainer.appendChild(dateStringContainer);
       dayContainer.appendChild(minTempContainer);
