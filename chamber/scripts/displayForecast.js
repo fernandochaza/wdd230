@@ -52,8 +52,6 @@ export function displayForecast() {
       minMaxTemps[day].max = maxTemp;
     });
 
-    console.log(minMaxTemps);
-
     for (const day in minMaxTemps) {
       const dayContainer = document.createElement("div");
 

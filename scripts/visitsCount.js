@@ -6,7 +6,6 @@ function getUserVisits() {
 function addNewVisit() {
   let userVisits = getUserVisits() ;
   userVisits++;
-  console.log(userVisits);
   localStorage.setItem('visitsCount', JSON.stringify(userVisits));
 };
 
